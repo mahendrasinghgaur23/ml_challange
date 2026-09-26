@@ -36,8 +36,9 @@ def get_top_k_sparse(A: csr_matrix, B: csr_matrix, K: int = 30) -> tuple:
         indices: (A.shape[0], K) matrix of B's row indices
     """
     # Chunk size is critical for RAM limit. Smaller chunks = less memory for intermediate dot products.
-    # 500 is a safe balance for 30GB RAM, preventing dense explosion if vectors are highly correlated.
-    chunk_size = 500 
+    # Reduced to 100 to guarantee peak RAM stays well below 22GB.
+    # A 100 x 6,000,000 dense float32 array is only ~2.4 GB.
+    chunk_size = 100 
     all_indices = []
     
     total_rows = A.shape[0]
@@ -54,11 +55,10 @@ def get_top_k_sparse(A: csr_matrix, B: csr_matrix, K: int = 30) -> tuple:
         A_chunk = A[start_idx:end_idx]
         
         # Cosine similarity (A and B are L2 normalized, so dot product == cosine sim)
-        # B.T is the transpose of candidate matrix
         sim_chunk = A_chunk.dot(B.T) 
         
         if sim_chunk.shape[1] > K:
-            # Convert to dense for fast argpartition
+            # Convert to dense (Now only 2.4GB max)
             sim_dense = sim_chunk.toarray()
             # Find indices of top K elements
             top_k_idx = np.argpartition(sim_dense, -K, axis=1)[:, -K:]
@@ -66,9 +66,11 @@ def get_top_k_sparse(A: csr_matrix, B: csr_matrix, K: int = 30) -> tuple:
             # Sort the top K to get them in descending order of similarity
             for i in range(top_k_idx.shape[0]):
                 top_k_idx[i] = top_k_idx[i][np.argsort(-sim_dense[i, top_k_idx[i]])]
+            del sim_dense
         else:
             sim_dense = sim_chunk.toarray()
             top_k_idx = np.argsort(-sim_dense, axis=1)
+            del sim_dense
             
         all_indices.append(top_k_idx)
     
@@ -78,12 +80,15 @@ def get_top_k_sparse(A: csr_matrix, B: csr_matrix, K: int = 30) -> tuple:
 def run_blocking(train_or_test: str, data_dir: Path, output_file: Path, top_k: int = 30):
     """Run TF-IDF blocking on preprocessed data."""
     t_start = time.time()
-    log.info(f"Starting blocking for {train_or_test} split... (Targeting 30GB RAM)")
+    log.info(f"Starting blocking for {train_or_test} split... (Strictly <22GB RAM)")
     
-    # Load data
-    s1_path = data_dir / train_or_test / f"preprocessed_{train_or_test}_source1.tsv"
-    s2_path = data_dir / train_or_test / f"preprocessed_{train_or_test}_source2.tsv"
-    s3_path = data_dir / train_or_test / f"preprocessed_{train_or_test}_source3.tsv"
+    # Load data (Updated for Kaggle Paths)
+    # The user path looks like: /kaggle/input/datasets/mahendrasinghgaur/preprocessed-train-data/preprocessed_train_source1.tsv
+    # Wait, the path might not have a 'train' subdirectory anymore based on user prompt. Let's handle it carefully.
+    
+    s1_path = data_dir / f"preprocessed_{train_or_test}_source1.tsv"
+    s2_path = data_dir / f"preprocessed_{train_or_test}_source2.tsv"
+    s3_path = data_dir / f"preprocessed_{train_or_test}_source3.tsv"
     
     log.info("Loading preprocessed TSVs...")
     s1 = pd.read_csv(s1_path, sep='\t', dtype=str).fillna("")
@@ -125,13 +130,13 @@ def run_blocking(train_or_test: str, data_dir: Path, output_file: Path, top_k: i
         # ---------------------------------------------------------
         log.info("Building TF-IDF vectorizer for Names...")
         # Switched to word analyzer and np.float32 to drastically reduce memory usage.
-        # max_df=0.05 is CRITICAL: it removes super common words that cause the dot product to explode.
+        # max_df=0.02 removes top 2% words. max_features=100_000 keeps vocab small.
         name_vec = TfidfVectorizer(
             analyzer='word', 
             ngram_range=(1, 2), 
             min_df=5, 
-            max_df=0.05, 
-            max_features=250_000, 
+            max_df=0.02, 
+            max_features=100_000, 
             dtype=np.float32
         )
         
@@ -156,8 +161,8 @@ def run_blocking(train_or_test: str, data_dir: Path, output_file: Path, top_k: i
             analyzer='word', 
             ngram_range=(1, 2), 
             min_df=5, 
-            max_df=0.05, 
-            max_features=250_000, 
+            max_df=0.02, 
+            max_features=100_000, 
             dtype=np.float32
         )
         
@@ -204,8 +209,8 @@ def run_blocking(train_or_test: str, data_dir: Path, output_file: Path, top_k: i
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data-dir', type=str, default='dataset/preprocessed', help="Path to preprocessed data")
-    parser.add_argument('--out-dir', type=str, default='outputs', help="Output directory")
+    parser.add_argument('--data-dir', type=str, default='/kaggle/input/datasets/mahendrasinghgaur/preprocessed-train-data', help="Path to preprocessed data")
+    parser.add_argument('--out-dir', type=str, default='/kaggle/working/project/outputs', help="Output directory")
     parser.add_argument('--split', type=str, required=True, choices=['train', 'test'], help="train or test split")
     parser.add_argument('--top-k', type=int, default=50, help="Total candidates to retrieve per S1 entity")
     args = parser.parse_args()
