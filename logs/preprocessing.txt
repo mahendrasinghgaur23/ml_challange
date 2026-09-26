@@ -1,0 +1,279 @@
+PS C:\Users\mahen\Desktop\ml challange\project> python -u "c:\Users\mahen\Desktop\ml challange\project\src\normalize.py"
+2026-09-25 22:02:31,716 [INFO] ============================================================
+2026-09-25 22:02:31,718 [INFO] Processing split: TRAIN
+2026-09-25 22:02:31,722 [INFO] ============================================================
+2026-09-25 22:02:31,727 [INFO] Processing: train_source1.tsv  ->  preprocessed_train_source1.tsv
+2026-09-25 22:02:31,729 [INFO] Chunk size: 100,000 rows
+2026-09-25 22:02:50,515 [INFO]   Chunk    1 | rows    100,000 | 18.41s | throughput 5,323 rows/s
+2026-09-25 22:03:06,008 [INFO]   Chunk    2 | rows    200,000 | 15.25s | throughput 5,834 rows/s
+2026-09-25 22:03:21,424 [INFO]   Chunk    3 | rows    300,000 | 15.12s | throughput 6,037 rows/s
+2026-09-25 22:03:37,013 [INFO]   Chunk    4 | rows    400,000 | 15.29s | throughput 6,127 rows/s
+2026-09-25 22:03:53,167 [INFO]   Chunk    5 | rows    500,000 | 15.82s | throughput 6,140 rows/s
+2026-09-25 22:04:09,440 [INFO]   Chunk    6 | rows    600,000 | 15.93s | throughput 6,140 rows/s
+2026-09-25 22:04:24,645 [INFO]   Chunk    7 | rows    700,000 | 14.93s | throughput 6,199 rows/s
+2026-09-25 22:04:38,498 [INFO]   Chunk    8 | rows    800,000 | 13.56s | throughput 6,311 rows/s
+2026-09-25 22:04:52,927 [INFO]   Chunk    9 | rows    900,000 | 14.17s | throughput 6,374 rows/s
+2026-09-25 22:05:07,350 [INFO]   Chunk   10 | rows  1,000,000 | 14.14s | throughput 6,426 rows/s
+2026-09-25 22:05:23,037 [INFO]   Chunk   11 | rows  1,100,000 | 15.22s | throughput 6,421 rows/s
+2026-09-25 22:05:38,730 [INFO]   Chunk   12 | rows  1,200,000 | 15.34s | throughput 6,417 rows/s
+2026-09-25 22:05:57,210 [INFO]   Chunk   13 | rows  1,300,000 | 18.04s | throughput 6,327 rows/s
+2026-09-25 22:06:15,476 [INFO]   Chunk   14 | rows  1,400,000 | 17.87s | throughput 6,257 rows/s
+2026-09-25 22:06:33,950 [INFO]   Chunk   15 | rows  1,500,000 | 18.12s | throughput 6,193 rows/s
+2026-09-25 22:06:52,326 [INFO]   Chunk   16 | rows  1,600,000 | 17.95s | throughput 6,140 rows/s
+2026-09-25 22:07:10,710 [INFO]   Chunk   17 | rows  1,700,000 | 17.97s | throughput 6,094 rows/s
+2026-09-25 22:07:30,252 [INFO]   Chunk   18 | rows  1,800,000 | 19.04s | throughput 6,030 rows/s
+2026-09-25 22:07:49,549 [INFO]   Chunk   19 | rows  1,900,000 | 18.80s | throughput 5,978 rows/s
+2026-09-25 22:08:07,192 [INFO]   Chunk   20 | rows  2,000,000 | 17.31s | throughput 5,962 rows/s
+2026-09-25 22:08:27,155 [INFO]   Chunk   21 | rows  2,100,000 | 19.54s | throughput 5,908 rows/s
+2026-09-25 22:08:46,476 [INFO]   Chunk   22 | rows  2,200,000 | 18.84s | throughput 5,871 rows/s
+2026-09-25 22:08:47,667 [INFO]   Chunk   23 | rows  2,206,821 | 1.12s | throughput 5,870 rows/s
+2026-09-25 22:08:47,669 [INFO] Done: preprocessed_train_source1.tsv — 2,206,821 rows in 375.9s (5,870 rows/s)
+
+2026-09-25 22:08:47,677 [INFO] Processing: train_source2.tsv  ->  preprocessed_train_source2.tsv
+2026-09-25 22:08:47,677 [INFO] Chunk size: 100,000 rows
+2026-09-25 22:09:02,195 [INFO]   Chunk    1 | rows    100,000 | 14.21s | throughput 6,888 rows/s
+2026-09-25 22:09:16,290 [INFO]   Chunk    2 | rows    200,000 | 13.70s | throughput 6,990 rows/s
+2026-09-25 22:09:30,717 [INFO]   Chunk    3 | rows    300,000 | 14.13s | throughput 6,970 rows/s
+2026-09-25 22:09:44,710 [INFO]   Chunk    4 | rows    400,000 | 13.73s | throughput 7,014 rows/s
+2026-09-25 22:09:58,700 [INFO]   Chunk    5 | rows    500,000 | 13.70s | throughput 7,040 rows/s
+2026-09-25 22:10:13,322 [INFO]   Chunk    6 | rows    600,000 | 14.33s | throughput 7,006 rows/s
+2026-09-25 22:10:27,671 [INFO]   Chunk    7 | rows    700,000 | 14.08s | throughput 7,000 rows/s
+2026-09-25 22:10:41,776 [INFO]   Chunk    8 | rows    800,000 | 13.82s | throughput 7,011 rows/s
+2026-09-25 22:10:56,564 [INFO]   Chunk    9 | rows    900,000 | 14.51s | throughput 6,983 rows/s
+2026-09-25 22:11:11,147 [INFO]   Chunk   10 | rows  1,000,000 | 14.22s | throughput 6,970 rows/s
+2026-09-25 22:11:25,183 [INFO]   Chunk   11 | rows  1,100,000 | 13.73s | throughput 6,984 rows/s
+2026-09-25 22:11:39,067 [INFO]   Chunk   12 | rows  1,200,000 | 13.61s | throughput 7,002 rows/s
+2026-09-25 22:11:53,635 [INFO]   Chunk   13 | rows  1,300,000 | 14.27s | throughput 6,991 rows/s
+2026-09-25 22:12:07,877 [INFO]   Chunk   14 | rows  1,400,000 | 13.96s | throughput 6,993 rows/s
+2026-09-25 22:12:21,904 [INFO]   Chunk   15 | rows  1,500,000 | 13.69s | throughput 7,002 rows/s
+2026-09-25 22:12:35,901 [INFO]   Chunk   16 | rows  1,600,000 | 13.71s | throughput 7,011 rows/s
+2026-09-25 22:12:49,947 [INFO]   Chunk   17 | rows  1,700,000 | 13.69s | throughput 7,017 rows/s
+2026-09-25 22:13:04,036 [INFO]   Chunk   18 | rows  1,800,000 | 13.83s | throughput 7,021 rows/s
+2026-09-25 22:13:18,205 [INFO]   Chunk   19 | rows  1,900,000 | 13.88s | throughput 7,023 rows/s
+2026-09-25 22:13:31,919 [INFO]   Chunk   20 | rows  2,000,000 | 13.42s | throughput 7,036 rows/s
+2026-09-25 22:13:45,936 [INFO]   Chunk   21 | rows  2,100,000 | 13.69s | throughput 7,041 rows/s
+2026-09-25 22:13:59,324 [INFO]   Chunk   22 | rows  2,200,000 | 13.11s | throughput 7,059 rows/s
+2026-09-25 22:14:30,740 [INFO]   Chunk   23 | rows  2,300,000 | 31.10s | throughput 6,704 rows/s
+2026-09-25 22:14:44,940 [INFO]   Chunk   24 | rows  2,400,000 | 13.85s | throughput 6,718 rows/s
+2026-09-25 22:14:59,315 [INFO]   Chunk   25 | rows  2,500,000 | 14.05s | throughput 6,727 rows/s
+2026-09-25 22:15:13,198 [INFO]   Chunk   26 | rows  2,600,000 | 13.56s | throughput 6,744 rows/s
+2026-09-25 22:15:24,198 [INFO]   Chunk   27 | rows  2,700,000 | 10.80s | throughput 6,809 rows/s
+2026-09-25 22:15:35,770 [INFO]   Chunk   28 | rows  2,800,000 | 11.37s | throughput 6,861 rows/s
+2026-09-25 22:15:47,645 [INFO]   Chunk   29 | rows  2,900,000 | 11.66s | throughput 6,905 rows/s
+2026-09-25 22:16:00,481 [INFO]   Chunk   30 | rows  3,000,000 | 12.63s | throughput 6,932 rows/s
+2026-09-25 22:16:11,634 [INFO]   Chunk   31 | rows  3,100,000 | 10.92s | throughput 6,983 rows/s
+2026-09-25 22:16:22,594 [INFO]   Chunk   32 | rows  3,200,000 | 10.74s | throughput 7,034 rows/s
+2026-09-25 22:16:33,611 [INFO]   Chunk   33 | rows  3,300,000 | 10.81s | throughput 7,083 rows/s
+2026-09-25 22:16:44,539 [INFO]   Chunk   34 | rows  3,400,000 | 10.72s | throughput 7,130 rows/s
+2026-09-25 22:16:55,505 [INFO]   Chunk   35 | rows  3,500,000 | 10.76s | throughput 7,175 rows/s
+2026-09-25 22:17:06,462 [INFO]   Chunk   36 | rows  3,600,000 | 10.75s | throughput 7,218 rows/s
+2026-09-25 22:17:18,179 [INFO]   Chunk   37 | rows  3,700,000 | 11.50s | throughput 7,248 rows/s
+2026-09-25 22:17:33,590 [INFO]   Chunk   38 | rows  3,800,000 | 15.19s | throughput 7,226 rows/s
+2026-09-25 22:17:44,926 [INFO]   Chunk   39 | rows  3,900,000 | 11.13s | throughput 7,259 rows/s
+2026-09-25 22:17:55,880 [INFO]   Chunk   40 | rows  4,000,000 | 10.75s | throughput 7,297 rows/s
+2026-09-25 22:18:06,927 [INFO]   Chunk   41 | rows  4,100,000 | 10.84s | throughput 7,331 rows/s
+2026-09-25 22:18:18,582 [INFO]   Chunk   42 | rows  4,200,000 | 11.45s | throughput 7,357 rows/s
+2026-09-25 22:18:29,945 [INFO]   Chunk   43 | rows  4,300,000 | 11.15s | throughput 7,385 rows/s
+2026-09-25 22:18:40,926 [INFO]   Chunk   44 | rows  4,400,000 | 10.77s | throughput 7,417 rows/s
+2026-09-25 22:18:51,873 [INFO]   Chunk   45 | rows  4,500,000 | 10.73s | throughput 7,448 rows/s
+2026-09-25 22:19:02,954 [INFO]   Chunk   46 | rows  4,600,000 | 10.87s | throughput 7,476 rows/s
+2026-09-25 22:19:13,945 [INFO]   Chunk   47 | rows  4,700,000 | 10.78s | throughput 7,505 rows/s
+2026-09-25 22:19:24,903 [INFO]   Chunk   48 | rows  4,800,000 | 10.74s | throughput 7,533 rows/s
+2026-09-25 22:19:35,887 [INFO]   Chunk   49 | rows  4,900,000 | 10.77s | throughput 7,559 rows/s
+2026-09-25 22:19:46,856 [INFO]   Chunk   50 | rows  5,000,000 | 10.76s | throughput 7,585 rows/s
+2026-09-25 22:19:50,738 [INFO]   Chunk   51 | rows  5,034,616 | 3.80s | throughput 7,593 rows/s
+2026-09-25 22:19:50,738 [INFO] Done: preprocessed_train_source2.tsv — 5,034,616 rows in 663.1s (7,593 rows/s)
+
+2026-09-25 22:19:50,743 [INFO] Processing: train_source3.tsv  ->  preprocessed_train_source3.tsv
+2026-09-25 22:19:50,744 [INFO] Chunk size: 100,000 rows
+2026-09-25 22:20:01,594 [INFO]   Chunk    1 | rows    100,000 | 10.55s | throughput 9,216 rows/s
+2026-09-25 22:20:12,912 [INFO]   Chunk    2 | rows    200,000 | 11.09s | throughput 9,021 rows/s
+2026-09-25 22:20:23,845 [INFO]   Chunk    3 | rows    300,000 | 10.72s | throughput 9,063 rows/s
+2026-09-25 22:20:34,741 [INFO]   Chunk    4 | rows    400,000 | 10.69s | throughput 9,091 rows/s
+2026-09-25 22:20:45,665 [INFO]   Chunk    5 | rows    500,000 | 10.72s | throughput 9,104 rows/s
+2026-09-25 22:20:56,570 [INFO]   Chunk    6 | rows    600,000 | 10.69s | throughput 9,115 rows/s
+2026-09-25 22:21:07,535 [INFO]   Chunk    7 | rows    700,000 | 10.76s | throughput 9,116 rows/s
+2026-09-25 22:21:18,459 [INFO]   Chunk    8 | rows    800,000 | 10.70s | throughput 9,120 rows/s
+2026-09-25 22:21:29,403 [INFO]   Chunk    9 | rows    900,000 | 10.74s | throughput 9,122 rows/s
+2026-09-25 22:21:40,284 [INFO]   Chunk   10 | rows  1,000,000 | 10.67s | throughput 9,129 rows/s
+2026-09-25 22:21:51,249 [INFO]   Chunk   11 | rows  1,100,000 | 10.76s | throughput 9,128 rows/s
+2026-09-25 22:22:02,176 [INFO]   Chunk   12 | rows  1,200,000 | 10.72s | throughput 9,130 rows/s
+2026-09-25 22:22:13,087 [INFO]   Chunk   13 | rows  1,300,000 | 10.70s | throughput 9,133 rows/s
+2026-09-25 22:22:24,206 [INFO]   Chunk   14 | rows  1,400,000 | 10.91s | throughput 9,123 rows/s
+2026-09-25 22:22:35,160 [INFO]   Chunk   15 | rows  1,500,000 | 10.75s | throughput 9,123 rows/s
+2026-09-25 22:22:47,249 [INFO]   Chunk   16 | rows  1,600,000 | 11.86s | throughput 9,065 rows/s
+2026-09-25 22:22:59,338 [INFO]   Chunk   17 | rows  1,700,000 | 11.86s | throughput 9,014 rows/s
+2026-09-25 22:23:11,707 [INFO]   Chunk   18 | rows  1,800,000 | 12.14s | throughput 8,957 rows/s
+2026-09-25 22:23:23,755 [INFO]   Chunk   19 | rows  1,900,000 | 11.82s | throughput 8,920 rows/s
+2026-09-25 22:23:36,661 [INFO]   Chunk   20 | rows  2,000,000 | 12.69s | throughput 8,853 rows/s
+2026-09-25 22:23:48,486 [INFO]   Chunk   21 | rows  2,100,000 | 11.42s | throughput 8,833 rows/s
+2026-09-25 22:24:00,233 [INFO]   Chunk   22 | rows  2,200,000 | 11.54s | throughput 8,818 rows/s
+2026-09-25 22:24:11,842 [INFO]   Chunk   23 | rows  2,300,000 | 11.39s | throughput 8,809 rows/s
+2026-09-25 22:24:23,270 [INFO]   Chunk   24 | rows  2,400,000 | 11.22s | throughput 8,806 rows/s
+2026-09-25 22:24:34,997 [INFO]   Chunk   25 | rows  2,500,000 | 11.52s | throughput 8,795 rows/s
+2026-09-25 22:24:46,621 [INFO]   Chunk   26 | rows  2,600,000 | 11.41s | throughput 8,787 rows/s
+2026-09-25 22:24:57,926 [INFO]   Chunk   27 | rows  2,700,000 | 11.11s | throughput 8,790 rows/s
+2026-09-25 22:25:09,404 [INFO]   Chunk   28 | rows  2,800,000 | 11.26s | throughput 8,787 rows/s
+2026-09-25 22:25:21,801 [INFO]   Chunk   29 | rows  2,900,000 | 12.19s | throughput 8,760 rows/s
+2026-09-25 22:25:35,392 [INFO]   Chunk   30 | rows  3,000,000 | 13.35s | throughput 8,704 rows/s
+2026-09-25 22:25:47,965 [INFO]   Chunk   31 | rows  3,100,000 | 12.34s | throughput 8,678 rows/s
+2026-09-25 22:25:58,964 [INFO]   Chunk   32 | rows  3,200,000 | 10.77s | throughput 8,690 rows/s
+2026-09-25 22:26:09,853 [INFO]   Chunk   33 | rows  3,300,000 | 10.69s | throughput 8,705 rows/s
+2026-09-25 22:26:20,724 [INFO]   Chunk   34 | rows  3,400,000 | 10.68s | throughput 8,718 rows/s
+2026-09-25 22:26:31,554 [INFO]   Chunk   35 | rows  3,500,000 | 10.64s | throughput 8,732 rows/s
+2026-09-25 22:26:42,464 [INFO]   Chunk   36 | rows  3,600,000 | 10.72s | throughput 8,744 rows/s
+2026-09-25 22:26:53,314 [INFO]   Chunk   37 | rows  3,700,000 | 10.66s | throughput 8,756 rows/s
+2026-09-25 22:27:04,161 [INFO]   Chunk   38 | rows  3,800,000 | 10.65s | throughput 8,768 rows/s
+2026-09-25 22:27:14,964 [INFO]   Chunk   39 | rows  3,900,000 | 10.61s | throughput 8,779 rows/s
+2026-09-25 22:27:26,001 [INFO]   Chunk   40 | rows  4,000,000 | 10.84s | throughput 8,786 rows/s
+2026-09-25 22:27:45,582 [INFO]   Chunk   41 | rows  4,100,000 | 19.39s | throughput 8,635 rows/s
+2026-09-25 22:27:56,491 [INFO]   Chunk   42 | rows  4,200,000 | 10.71s | throughput 8,646 rows/s
+2026-09-25 22:28:07,421 [INFO]   Chunk   43 | rows  4,300,000 | 10.73s | throughput 8,658 rows/s
+2026-09-25 22:28:18,303 [INFO]   Chunk   44 | rows  4,400,000 | 10.68s | throughput 8,669 rows/s
+2026-09-25 22:28:29,545 [INFO]   Chunk   45 | rows  4,500,000 | 11.05s | throughput 8,674 rows/s
+2026-09-25 22:28:40,402 [INFO]   Chunk   46 | rows  4,600,000 | 10.66s | throughput 8,685 rows/s
+2026-09-25 22:28:51,298 [INFO]   Chunk   47 | rows  4,700,000 | 10.70s | throughput 8,695 rows/s
+2026-09-25 22:29:02,393 [INFO]   Chunk   48 | rows  4,800,000 | 10.90s | throughput 8,701 rows/s
+2026-09-25 22:29:13,265 [INFO]   Chunk   49 | rows  4,900,000 | 10.67s | throughput 8,711 rows/s
+2026-09-25 22:29:24,386 [INFO]   Chunk   50 | rows  5,000,000 | 10.93s | throughput 8,716 rows/s
+2026-09-25 22:29:35,660 [INFO]   Chunk   51 | rows  5,100,000 | 11.08s | throughput 8,719 rows/s
+2026-09-25 22:29:46,686 [INFO]   Chunk   52 | rows  5,200,000 | 10.82s | throughput 8,726 rows/s
+2026-09-25 22:29:56,159 [INFO]   Chunk   53 | rows  5,285,603 | 9.30s | throughput 8,731 rows/s
+2026-09-25 22:29:56,160 [INFO] Done: preprocessed_train_source3.tsv — 5,285,603 rows in 605.4s (8,731 rows/s)
+
+2026-09-25 22:29:56,169 [INFO] ============================================================
+2026-09-25 22:29:56,170 [INFO] Processing split: TEST
+2026-09-25 22:29:56,170 [INFO] ============================================================
+2026-09-25 22:29:56,172 [INFO] Processing: test_source1.tsv  ->  preprocessed_test_source1.tsv
+2026-09-25 22:29:56,172 [INFO] Chunk size: 100,000 rows
+2026-09-25 22:30:07,873 [INFO]   Chunk    1 | rows    100,000 | 11.49s | throughput 8,547 rows/s
+2026-09-25 22:30:19,773 [INFO]   Chunk    2 | rows    200,000 | 11.69s | throughput 8,475 rows/s
+2026-09-25 22:30:31,977 [INFO]   Chunk    3 | rows    300,000 | 12.01s | throughput 8,379 rows/s
+2026-09-25 22:30:44,306 [INFO]   Chunk    4 | rows    400,000 | 12.13s | throughput 8,310 rows/s
+2026-09-25 22:30:56,089 [INFO]   Chunk    5 | rows    500,000 | 11.57s | throughput 8,345 rows/s
+2026-09-25 22:31:07,912 [INFO]   Chunk    6 | rows    600,000 | 11.63s | throughput 8,364 rows/s
+2026-09-25 22:31:19,685 [INFO]   Chunk    7 | rows    700,000 | 11.58s | throughput 8,382 rows/s
+2026-09-25 22:31:34,688 [INFO]   Chunk    8 | rows    800,000 | 14.80s | throughput 8,121 rows/s
+2026-09-25 22:31:51,175 [INFO]   Chunk    9 | rows    900,000 | 16.20s | throughput 7,826 rows/s
+2026-09-25 22:32:07,676 [INFO]   Chunk   10 | rows  1,000,000 | 16.21s | throughput 7,604 rows/s
+2026-09-25 22:32:23,756 [INFO]   Chunk   11 | rows  1,100,000 | 15.80s | throughput 7,453 rows/s
+2026-09-25 22:32:40,218 [INFO]   Chunk   12 | rows  1,200,000 | 16.19s | throughput 7,315 rows/s
+2026-09-25 22:32:56,689 [INFO]   Chunk   13 | rows  1,300,000 | 16.18s | throughput 7,202 rows/s
+2026-09-25 22:33:14,608 [INFO]   Chunk   14 | rows  1,400,000 | 17.62s | throughput 7,055 rows/s
+2026-09-25 22:33:31,329 [INFO]   Chunk   15 | rows  1,500,000 | 16.46s | throughput 6,972 rows/s
+2026-09-25 22:33:47,219 [INFO]   Chunk   16 | rows  1,600,000 | 15.64s | throughput 6,925 rows/s
+2026-09-25 22:34:03,500 [INFO]   Chunk   17 | rows  1,700,000 | 16.01s | throughput 6,873 rows/s
+2026-09-25 22:34:08,888 [INFO]   Chunk   18 | rows  1,732,544 | 5.28s | throughput 6,856 rows/s
+2026-09-25 22:34:08,889 [INFO] Done: preprocessed_test_source1.tsv — 1,732,544 rows in 252.7s (6,856 rows/s)
+
+2026-09-25 22:34:08,898 [INFO] Processing: test_source2.tsv  ->  preprocessed_test_source2.tsv
+2026-09-25 22:34:08,898 [INFO] Chunk size: 100,000 rows
+2026-09-25 22:34:25,104 [INFO]   Chunk    1 | rows    100,000 | 15.88s | throughput 6,171 rows/s
+2026-09-25 22:34:41,528 [INFO]   Chunk    2 | rows    200,000 | 16.18s | throughput 6,129 rows/s
+2026-09-25 22:34:57,919 [INFO]   Chunk    3 | rows    300,000 | 16.05s | throughput 6,120 rows/s
+2026-09-25 22:35:13,771 [INFO]   Chunk    4 | rows    400,000 | 15.60s | throughput 6,166 rows/s
+2026-09-25 22:35:30,206 [INFO]   Chunk    5 | rows    500,000 | 16.12s | throughput 6,149 rows/s
+2026-09-25 22:35:46,209 [INFO]   Chunk    6 | rows    600,000 | 15.72s | throughput 6,166 rows/s
+2026-09-25 22:36:02,249 [INFO]   Chunk    7 | rows    700,000 | 15.75s | throughput 6,175 rows/s
+2026-09-25 22:36:18,355 [INFO]   Chunk    8 | rows    800,000 | 15.76s | throughput 6,180 rows/s
+2026-09-25 22:36:34,809 [INFO]   Chunk    9 | rows    900,000 | 16.18s | throughput 6,168 rows/s
+2026-09-25 22:36:51,070 [INFO]   Chunk   10 | rows  1,000,000 | 15.98s | throughput 6,166 rows/s
+2026-09-25 22:37:07,709 [INFO]   Chunk   11 | rows  1,100,000 | 16.34s | throughput 6,152 rows/s
+2026-09-25 22:37:23,995 [INFO]   Chunk   12 | rows  1,200,000 | 15.97s | throughput 6,151 rows/s
+2026-09-25 22:37:41,156 [INFO]   Chunk   13 | rows  1,300,000 | 16.87s | throughput 6,125 rows/s
+2026-09-25 22:37:57,612 [INFO]   Chunk   14 | rows  1,400,000 | 16.15s | throughput 6,121 rows/s
+2026-09-25 22:38:14,428 [INFO]   Chunk   15 | rows  1,500,000 | 16.52s | throughput 6,109 rows/s
+2026-09-25 22:38:31,158 [INFO]   Chunk   16 | rows  1,600,000 | 16.47s | throughput 6,101 rows/s
+2026-09-25 22:38:47,329 [INFO]   Chunk   17 | rows  1,700,000 | 15.87s | throughput 6,106 rows/s
+2026-09-25 22:39:04,024 [INFO]   Chunk   18 | rows  1,800,000 | 16.42s | throughput 6,099 rows/s
+2026-09-25 22:39:21,103 [INFO]   Chunk   19 | rows  1,900,000 | 16.78s | throughput 6,086 rows/s
+2026-09-25 22:39:38,209 [INFO]   Chunk   20 | rows  2,000,000 | 16.81s | throughput 6,073 rows/s
+2026-09-25 22:39:53,804 [INFO]   Chunk   21 | rows  2,100,000 | 15.31s | throughput 6,089 rows/s
+2026-09-25 22:40:06,953 [INFO]   Chunk   22 | rows  2,200,000 | 12.92s | throughput 6,144 rows/s
+2026-09-25 22:40:21,061 [INFO]   Chunk   23 | rows  2,300,000 | 13.90s | throughput 6,180 rows/s
+2026-09-25 22:40:33,166 [INFO]   Chunk   24 | rows  2,400,000 | 11.89s | throughput 6,246 rows/s
+2026-09-25 22:40:45,514 [INFO]   Chunk   25 | rows  2,500,000 | 12.13s | throughput 6,303 rows/s
+2026-09-25 22:40:57,908 [INFO]   Chunk   26 | rows  2,600,000 | 12.17s | throughput 6,357 rows/s
+2026-09-25 22:41:10,193 [INFO]   Chunk   27 | rows  2,700,000 | 12.06s | throughput 6,409 rows/s
+2026-09-25 22:41:22,010 [INFO]   Chunk   28 | rows  2,800,000 | 11.54s | throughput 6,465 rows/s
+2026-09-25 22:41:33,500 [INFO]   Chunk   29 | rows  2,900,000 | 11.29s | throughput 6,523 rows/s
+2026-09-25 22:41:45,021 [INFO]   Chunk   30 | rows  3,000,000 | 11.32s | throughput 6,577 rows/s
+2026-09-25 22:41:56,594 [INFO]   Chunk   31 | rows  3,100,000 | 11.37s | throughput 6,628 rows/s
+2026-09-25 22:42:08,292 [INFO]   Chunk   32 | rows  3,200,000 | 11.49s | throughput 6,675 rows/s
+2026-09-25 22:42:19,832 [INFO]   Chunk   33 | rows  3,300,000 | 11.33s | throughput 6,722 rows/s
+2026-09-25 22:42:31,367 [INFO]   Chunk   34 | rows  3,400,000 | 11.32s | throughput 6,767 rows/s
+2026-09-25 22:42:42,947 [INFO]   Chunk   35 | rows  3,500,000 | 11.37s | throughput 6,809 rows/s
+2026-09-25 22:42:54,764 [INFO]   Chunk   36 | rows  3,600,000 | 11.59s | throughput 6,846 rows/s
+2026-09-25 22:43:06,407 [INFO]   Chunk   37 | rows  3,700,000 | 11.40s | throughput 6,884 rows/s
+2026-09-25 22:43:18,051 [INFO]   Chunk   38 | rows  3,800,000 | 11.43s | throughput 6,920 rows/s
+2026-09-25 22:43:29,651 [INFO]   Chunk   39 | rows  3,900,000 | 11.39s | throughput 6,955 rows/s
+2026-09-25 22:43:41,413 [INFO]   Chunk   40 | rows  4,000,000 | 11.54s | throughput 6,987 rows/s
+2026-09-25 22:43:53,464 [INFO]   Chunk   41 | rows  4,100,000 | 11.84s | throughput 7,014 rows/s
+2026-09-25 22:44:05,027 [INFO]   Chunk   42 | rows  4,200,000 | 11.34s | throughput 7,045 rows/s
+2026-09-25 22:44:16,653 [INFO]   Chunk   43 | rows  4,300,000 | 11.41s | throughput 7,075 rows/s
+2026-09-25 22:44:28,288 [INFO]   Chunk   44 | rows  4,400,000 | 11.41s | throughput 7,104 rows/s
+2026-09-25 22:44:45,012 [INFO]   Chunk   45 | rows  4,500,000 | 16.51s | throughput 7,074 rows/s
+2026-09-25 22:45:01,973 [INFO]   Chunk   46 | rows  4,600,000 | 16.69s | throughput 7,044 rows/s
+2026-09-25 22:45:18,098 [INFO]   Chunk   47 | rows  4,700,000 | 15.78s | throughput 7,023 rows/s
+2026-09-25 22:45:35,279 [INFO]   Chunk   48 | rows  4,800,000 | 16.82s | throughput 6,993 rows/s
+2026-09-25 22:45:49,967 [INFO]   Chunk   49 | rows  4,887,273 | 14.40s | throughput 6,971 rows/s
+2026-09-25 22:45:49,968 [INFO] Done: preprocessed_test_source2.tsv — 4,887,273 rows in 701.1s (6,971 rows/s)
+
+2026-09-25 22:45:50,010 [INFO] Processing: test_source3.tsv  ->  preprocessed_test_source3.tsv
+2026-09-25 22:45:50,011 [INFO] Chunk size: 100,000 rows
+2026-09-25 22:46:06,182 [INFO]   Chunk    1 | rows    100,000 | 15.83s | throughput 6,183 rows/s
+2026-09-25 22:46:21,938 [INFO]   Chunk    2 | rows    200,000 | 15.46s | throughput 6,264 rows/s
+2026-09-25 22:46:38,103 [INFO]   Chunk    3 | rows    300,000 | 15.85s | throughput 6,238 rows/s
+2026-09-25 22:46:54,495 [INFO]   Chunk    4 | rows    400,000 | 16.11s | throughput 6,203 rows/s
+2026-09-25 22:47:10,408 [INFO]   Chunk    5 | rows    500,000 | 15.61s | throughput 6,219 rows/s
+2026-09-25 22:47:26,654 [INFO]   Chunk    6 | rows    600,000 | 15.93s | throughput 6,208 rows/s
+2026-09-25 22:47:42,703 [INFO]   Chunk    7 | rows    700,000 | 15.77s | throughput 6,212 rows/s
+2026-09-25 22:47:59,581 [INFO]   Chunk    8 | rows    800,000 | 16.57s | throughput 6,174 rows/s
+2026-09-25 22:48:15,596 [INFO]   Chunk    9 | rows    900,000 | 15.70s | throughput 6,182 rows/s
+2026-09-25 22:48:34,624 [INFO]   Chunk   10 | rows  1,000,000 | 18.69s | throughput 6,075 rows/s
+2026-09-25 22:48:51,463 [INFO]   Chunk   11 | rows  1,100,000 | 16.50s | throughput 6,062 rows/s
+2026-09-25 22:49:08,495 [INFO]   Chunk   12 | rows  1,200,000 | 16.72s | throughput 6,046 rows/s
+2026-09-25 22:49:26,627 [INFO]   Chunk   13 | rows  1,300,000 | 17.82s | throughput 6,001 rows/s
+2026-09-25 22:49:43,890 [INFO]   Chunk   14 | rows  1,400,000 | 16.96s | throughput 5,986 rows/s
+2026-09-25 22:50:00,056 [INFO]   Chunk   15 | rows  1,500,000 | 15.86s | throughput 5,999 rows/s
+2026-09-25 22:50:15,487 [INFO]   Chunk   16 | rows  1,600,000 | 15.11s | throughput 6,027 rows/s
+2026-09-25 22:50:31,911 [INFO]   Chunk   17 | rows  1,700,000 | 16.16s | throughput 6,031 rows/s
+2026-09-25 22:50:48,054 [INFO]   Chunk   18 | rows  1,800,000 | 15.79s | throughput 6,039 rows/s
+2026-09-25 22:51:04,227 [INFO]   Chunk   19 | rows  1,900,000 | 15.81s | throughput 6,047 rows/s
+2026-09-25 22:51:19,732 [INFO]   Chunk   20 | rows  2,000,000 | 15.19s | throughput 6,066 rows/s
+2026-09-25 22:51:48,044 [INFO]   Chunk   21 | rows  2,100,000 | 28.03s | throughput 5,865 rows/s
+2026-09-25 22:52:10,414 [INFO]   Chunk   22 | rows  2,200,000 | 21.75s | throughput 5,783 rows/s
+2026-09-25 22:52:25,070 [INFO]   Chunk   23 | rows  2,300,000 | 14.36s | throughput 5,822 rows/s
+2026-09-25 22:52:39,435 [INFO]   Chunk   24 | rows  2,400,000 | 14.02s | throughput 5,862 rows/s
+2026-09-25 22:52:53,752 [INFO]   Chunk   25 | rows  2,500,000 | 13.98s | throughput 5,900 rows/s
+2026-09-25 22:53:07,567 [INFO]   Chunk   26 | rows  2,600,000 | 13.50s | throughput 5,942 rows/s
+2026-09-25 22:53:22,315 [INFO]   Chunk   27 | rows  2,700,000 | 14.45s | throughput 5,969 rows/s
+2026-09-25 22:53:38,117 [INFO]   Chunk   28 | rows  2,800,000 | 15.42s | throughput 5,982 rows/s
+2026-09-25 22:53:53,148 [INFO]   Chunk   29 | rows  2,900,000 | 14.74s | throughput 6,002 rows/s
+2026-09-25 22:54:07,119 [INFO]   Chunk   30 | rows  3,000,000 | 13.71s | throughput 6,035 rows/s
+2026-09-25 22:54:21,652 [INFO]   Chunk   31 | rows  3,100,000 | 14.19s | throughput 6,059 rows/s
+2026-09-25 22:54:35,835 [INFO]   Chunk   32 | rows  3,200,000 | 13.84s | throughput 6,086 rows/s
+2026-09-25 22:54:50,434 [INFO]   Chunk   33 | rows  3,300,000 | 14.31s | throughput 6,106 rows/s
+2026-09-25 22:55:05,681 [INFO]   Chunk   34 | rows  3,400,000 | 14.91s | throughput 6,119 rows/s
+2026-09-25 22:55:20,908 [INFO]   Chunk   35 | rows  3,500,000 | 14.92s | throughput 6,131 rows/s
+2026-09-25 22:55:37,484 [INFO]   Chunk   36 | rows  3,600,000 | 16.24s | throughput 6,128 rows/s
+2026-09-25 22:55:53,060 [INFO]   Chunk   37 | rows  3,700,000 | 15.29s | throughput 6,135 rows/s
+2026-09-25 22:56:09,427 [INFO]   Chunk   38 | rows  3,800,000 | 16.10s | throughput 6,135 rows/s
+2026-09-25 22:56:25,603 [INFO]   Chunk   39 | rows  3,900,000 | 15.85s | throughput 6,136 rows/s
+2026-09-25 22:56:41,593 [INFO]   Chunk   40 | rows  4,000,000 | 15.64s | throughput 6,139 rows/s
+2026-09-25 22:56:57,602 [INFO]   Chunk   41 | rows  4,100,000 | 15.70s | throughput 6,141 rows/s
+2026-09-25 22:57:13,238 [INFO]   Chunk   42 | rows  4,200,000 | 15.25s | throughput 6,147 rows/s
+2026-09-25 22:57:29,392 [INFO]   Chunk   43 | rows  4,300,000 | 15.86s | throughput 6,148 rows/s
+2026-09-25 22:57:45,613 [INFO]   Chunk   44 | rows  4,400,000 | 15.94s | throughput 6,149 rows/s
+2026-09-25 22:58:01,472 [INFO]   Chunk   45 | rows  4,500,000 | 15.53s | throughput 6,152 rows/s
+2026-09-25 22:58:19,953 [INFO]   Chunk   46 | rows  4,600,000 | 18.20s | throughput 6,134 rows/s
+2026-09-25 22:58:47,782 [INFO]   Chunk   47 | rows  4,700,000 | 26.62s | throughput 6,043 rows/s
+2026-09-25 22:59:08,443 [INFO]   Chunk   48 | rows  4,800,000 | 20.30s | throughput 6,012 rows/s
+2026-09-25 22:59:28,535 [INFO]   Chunk   49 | rows  4,900,000 | 19.70s | throughput 5,986 rows/s
+2026-09-25 22:59:43,942 [INFO]   Chunk   50 | rows  5,000,000 | 15.04s | throughput 5,996 rows/s
+2026-09-25 22:59:56,892 [INFO]   Chunk   51 | rows  5,082,316 | 12.68s | throughput 6,001 rows/s
+2026-09-25 22:59:56,893 [INFO] Done: preprocessed_test_source3.tsv — 5,082,316 rows in 846.9s (6,001 rows/s)
+
+2026-09-25 22:59:56,905 [INFO] All preprocessing complete in 57.4 minutes.
+2026-09-25 22:59:56,905 [INFO] Output written to: dataset\preprocessed
+PS C:\Users\mahen\Desktop\ml challange\project> 
